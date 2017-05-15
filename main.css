@@ -1,0 +1,47 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 100%;
+}
+/*start Header*/
+header{
+  background-color: #73DFFA;
+}
+header h1{
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0.5em;
+  border-left: 0.1em solid #FFCE00;
+  border-right: 0.1em solid #FFCE00;
+}
+.bloc1, .bloc2, .bloc3 {
+  float: left;
+}
+.bloc1, .bloc3 {
+  width: 20%;
+}
+.bloc2 {
+  width: 60%;
+}
+.bloc3{
+  text-align: center;
+}
+.connecioncentre{
+  margin: 0 10% 0 10%;
+}
+/*End Header*/
+/*Start body*/
+.nav ul{
+  background-color: #FFB49F;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  list-style: none;
+}
+
+
+
+/*End Body*/
