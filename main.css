@@ -9,6 +9,7 @@ img{
 /*start Header*/
 header{
   background-color: #73DFFA;
+  height: 5.5em;
 }
 header h1{
   font-size: 2em;
@@ -34,14 +35,33 @@ header h1{
 }
 /*End Header*/
 /*Start body*/
-.nav ul{
-  background-color: #FFB49F;
+#nav ul{
+  background-color: #63656A;
   display: flex;
-  justify-content: space-around;
-  padding: 1em;
+  height: 8em;
+  line-height: 7em;
+  justify-content: center;
   list-style: none;
 }
-
+#nav ul li{
+  text-align: center;
+  padding: 1em;
+  font-size: 0.8em;
+}
+#nav a{
+  text-decoration: none;
+  color: white;
+}
+#nav ul li ul{
+  display: none;
+}
+#nav ul li ul li{
+  height: auto;
+}
+#nav ul li:hover ul{
+  display: flex;
+  flex-direction: column;
+}
 
 
 /*End Body*/
