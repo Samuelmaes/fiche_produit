@@ -3,11 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta lang="fr">
-    <meta name="description" content="Le jeu Arma3 est le jeu le plus reconnu dans le monde des Gameurs souhaitant jouer en équipe.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="texte/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Le jeu Arma3 est le jeu le plus reconnu dans le monde des Gameurs souhaitant jouer en équipe.">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Arma 3</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -17,20 +22,16 @@
 
       </div>
       <div class="bloc2">
-        <h1>les meilleurs jeux coopération du moment</h1>
+        <h1>Les meilleurs jeux coopération du moment</h1>
       </div>
       <div class="bloc3">
         <div class="connexion">
           <div class="connexioncentre">
             <form method="post" action="traitement.php">
-                <p>
-                  <label>Votre pseudo</label> : <input type="text" name="pseudo" />
-                </p>
+              <input type="text" name="pseudo" placeholder="Pseudo"/>
             </form>
             <form class="post" action="index.html" method="post">
-              <p>
-                <label>Mot de passe</label> : <input type="password" name="mot de passe" />
-              </p>
+              <input type="password" name="mot de passe" placeholder="Mot de passe" />
             </form>
           </div>
         </div>
@@ -40,26 +41,163 @@
     <body>
       <!-- Start barre de navigation -->
       <div id="nav">
+        <div class="superlogo">
+        <p>Mon super <span class="rond">Logo</span></p>
+        </div>
+
         <ul>
-          <li><a href="#">QUI SOMMES-NOUS ?</a></li>
-          <li><a href="#">NOS PRODUITS</a></li>
-          <li><a href="#">NOS SERVICES</a></li>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="#">NOS SERVICES</a>
+            <ul>
+              <li><a href="#">PERSONNELS</a></li>
+              <li><a href="#">PROFESSIONNELS</a></li>
+            </ul>
+          </li>
           <li><a href="#">ACTUALITES & AGENDA</a>
-            <div id="deroulant">
             <ul>
               <li><a href="#">ACTUALITES</a></li>
               <li><a href="#">AGENDA</a></li>
               <li><a href="#">PRESSE</a></li>
             </ul>
-            </div>
           </li>
           <li><a href="#">CONTACT</a></li>
+          <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
         </ul>
       </div>
       <!-- End barre de navigation -->
+
+      <!-- start slide javascript -->
+      <body>
+        <section class="article">
+
+        <div class="slideshow-container">
+
+        <div class="mySlides bofade">
+          <div class="numbertext">1 / 4</div>
+          <img src="img/jacket_arma3.jpg" style="width:100%">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides bofade">
+          <div class="numbertext">2 / 4</div>
+          <img src="img/arma3_screenshot_01.jpg" style="width:100%">
+          <!-- <div class="text">Caption Two</div> -->
+        </div>
+
+        <div class="mySlides bofade">
+          <div class="numbertext">3 / 4</div>
+          <img src="img/2rnkggn_4.jpg" style="width:100%">
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+
+        <div class="mySlides bofade">
+          <div class="numbertext">4 / 4</div>
+          <img src="img/02.jpg" style="width:100%">
+          <!-- <div class="text">Caption Four</div> -->
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        </div>
+        <br>
+
+
+      <!-- end slide javascript -->
+    <div class="description">
+      <h3>Arma3 : collection ultime</h3>
+      <p style="margin-bottom: 25px;">
+        Plongez dans la simulation de combat militaire ultime ! Authentique,
+        riche et ouvert, ArmA 3 vous envoie sur le front d’une guerre moderne
+        ultra-réaliste.
+        <br>
+        ArmA 3 est le dernier né de la série des jeux de tir militaire aux
+        multiples récompenses développé par Bohemia Interactive, qui a débuté
+        en 2001 avec l’excellent ArmA : Cold War Assault
+        (à l’origine connu sous le nom ‘Operation Flashpoint : Cold War Crisis’).
+        Avec ArmA 3, vous vous lancez dans des combats militaires titanesques sur
+        un immense terrain de jeu de plus de 290km². Avec plus de 40 armes et
+        plus de 20 véhicules terrestres, aériens et maritimes, et un large choix
+        de modes de jeu solo et multijoueur, ArmA 3 propose la simulation de
+        combat militaire la plus complète, la plus riche et la plus réaliste
+        qui soit.
+        </p>
+        <div class="col-xs-12 col-lg-6"></div>
+        <div class="col-xs-12 col-lg-6"><button type="button" class="btn btn-primary btn-lg">Obtenir le jeu</button></div>
+      </div>
+    </section>
+
+    <!-- start choix supp -->
+
+  <div class="container images-relatives">
+    <span class="fluide"><h2>Vous aimerez aussi :</h2></span>
+    <div class="row">
+      <div class="col-xs-12 col-md-4 actionsurvol "><img src="img/overwatch_thanks.jpg" alt="Overwatch" class="img-thumbnail">
+        <div class="survol">
+          <h2>Overwatch: Edition limited</h2>
+          <button type="button" class="btn btn-primary btn-lg">Obtenir le jeu</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4 actionsurvol"><img src="img/142832718118.jpeg" alt="Heroes of the storm" class="img-thumbnail">
+        <div class="survol">
+          <h2>Heroes of the storm: Edition limited</h2>
+          <button type="button" class="btn btn-primary btn-lg">Obtenir le jeu</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4 actionsurvol"><img src="img/aragami-listing-thumb-01-ps4-us-09sep16.png" alt="Aragami" class="img-thumbnail">
+        <div class="survol">
+          <h2>Aragami: Edition limited (version premium)</h2>
+          <button type="button" class="btn btn-primary btn-lg">Obtenir le jeu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- end choix supp -->
+
     </body>
     <footer>
+      <!-- meta slide javascript -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+       <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+      <!-- end meta slide javascript -->
     </footer>
   </body>
 </html>

@@ -26,42 +26,252 @@ header h1{
 }
 .bloc2 {
   width: 60%;
+  margin-top: 0.5em;
 }
 .bloc3{
   text-align: center;
 }
+.connexion{
+  margin: 1em;
+}
 .connecioncentre{
   margin: 0 10% 0 10%;
 }
-/*End Header*/
-/*Start body*/
-#nav ul{
+/*start barre nav*/
+#nav{
   background-color: #63656A;
+}
+#nav ul{
   display: flex;
   height: 8em;
   line-height: 7em;
   justify-content: center;
+  position: relative;
   list-style: none;
 }
 #nav ul li{
   text-align: center;
+  position: relative;
   padding: 1em;
   font-size: 0.8em;
 }
-#nav a{
-  text-decoration: none;
-  color: white;
-}
 #nav ul li ul{
   display: none;
+  position: absolute;
+  width: 100%;
+  top: 85px;
+  flex-direction: column;
+  line-height: 1em;
 }
 #nav ul li ul li{
-  height: auto;
+  padding: 10px;
 }
 #nav ul li:hover ul{
   display: flex;
-  flex-direction: column;
+}
+#nav ul li ul li:hover{
+  background-color: rgba(255, 204, 0, 0.8);
+}
+#nav ul li:hover a{
+  color: white;
+}
+#nav ul li ul li:hover a{
+  color: black;
+}
+#nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+#nav ul li a:hover{
+color: rgb(255, 204, 0);
+}
+/*end barre nav*/
+/*End Header*/
+
+
+
+/*start slide javascript*/
+* {box-sizing:border-box}
+body{
+  font-family: Verdana,sans-serif;margin:0
+}
+.mySlides{
+  display:none
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: 2em;
 }
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
 
-/*End Body*/
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@-webkit-keyframes bofade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes bofade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*end slide*/
+/*start descriptif*/
+.article{
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+.description{
+  border: 4.5px solid #FFCE00;
+  border-radius: 4em;
+  margin-top: 1em;
+  padding: 25px 36px 25px 36px;
+  width: 30em;
+}
+.description h3{
+  text-align: center;
+}
+.description p{
+  text-align: justify;
+  font-size: 0.9em;
+  padding-top: 1em;
+}
+.images-relatives{
+  margin-top: 3em;
+}
+/*end descriptif*/
+.survol{
+  background-color: lightgrey;
+  margin: auto;
+  display: none;
+  bottom: 0em;
+  width: 100%;
+  height: 100%;
+}
+.survol h2{
+  padding-top: 2em;
+}
+.actionsurvol:hover .survol{
+  position: absolute;
+  display: block;
+}
+/*Start portfolio*/
+.vignette1, .vignette2, .vignette3, .vignette4, .vignette5, .vignette6, .vignette7, .vignette8, .vignette9{
+  border: red 2px solid;
+  border-radius: 3em;
+  width: auto;
+  height: 18em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.vignette1{
+  background-image: url("img/aragami-listing-thumb-01-ps4-us-09sep16.png");
+}
+.vignette2{
+  background-image: url("img/modern11.jpg");
+}
+.vignette3{
+  background-image: url("img/maxresdefault.jpg");
+}
+.vignette4{
+  background-image: url("img/watch-dogs-2.png");
+}
+.vignette5{
+  background-image: url("img/bluetooth-game-5.jpg");
+}
+.vignette6{
+  background-image: url("img/maxresdefault-8.jpg");
+}
+.vignette7{
+  background-image: url("img/overwatch_thanks.jpg");
+}
+.vignette8{
+  background-image: url("img/142832718118.jpeg");
+}
+.vignette9{
+  background-image: url("img/c20671bd-d2fa-433e-b103-a59b56bb00ce.jpg");
+}
+.loupe{
+  font-size: 4em;
+  color: black;
+  padding-left: 6em;
+}
+
+o
+
+/*End portfolio*/
+/*end body*/
+/*start footer*/
+
+
+/*end slide javascript*/
+
+/*end footer*/
